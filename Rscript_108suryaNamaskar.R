@@ -1,0 +1,7 @@
+library(tidyverse)
+library(lubridate)
+Date <- seq(as.Date("2022/2/6"), as.Date("2022/2/15"), by = "days")
+Start_time <- c("", "", "", "","05:33", "05:58", "07:38", "06:58", "05:58", "06:24")
+End_time <- c("", "", "", "","06:20", "06:43", "08:22", "07:38", "06:40", "07:06")
+time_taken <- c(NA, NA, NA, NA, 47, 45, 44, 40, 42, 40)
+sdata <- tibble(Date, Start_time, End_time, time_taken)
