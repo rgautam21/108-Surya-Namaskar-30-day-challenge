@@ -5,3 +5,4 @@ Start_time <- c("", "", "", "","05:33", "05:58", "07:38", "06:58", "05:58", "06:
 End_time <- c("", "", "", "","06:20", "06:43", "08:22", "07:38", "06:40", "07:06")
 time_taken <- c(NA, NA, NA, NA, 47, 45, 44, 40, 42, 40)
 sdata <- tibble(Date, Start_time, End_time, time_taken)
+mean(time_taken, na.rm = T); sd(time_taken, na.rm = T)
